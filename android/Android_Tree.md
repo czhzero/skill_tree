@@ -4,6 +4,8 @@
 
 ## 面向对象
 
+[Java多态性](https://github.com/czhzero/skill_tree/blob/master/android/article/Java多态.md)
+
 ## 集合/容器
 
 ## 泛型
