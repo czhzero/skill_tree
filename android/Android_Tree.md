@@ -1,4 +1,4 @@
-# 开发语言
+# Java
 
 ## 基础语法
 
@@ -21,6 +21,12 @@
 ## 类型/反射
 
 # Android
+
+## 资源适配
+
+[res资源目录详解](https://github.com/czhzero/skill_tree/blob/master/android/article/res资源目录详解.md)
+
+
 
 # 网络
 
