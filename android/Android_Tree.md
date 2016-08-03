@@ -30,6 +30,13 @@
 
 [Android内存泄漏常见场景分析](http://www.czhzero.com/2016/07/04/memory-leak-possibility/)
 
+## 虚拟机
+
+[ART VS Dalvik](http://hello2mao.github.io/2015/12/11/ART_GC_VS_Dalvik_GC.html)
+
+[深入android内存分配和回收](http://www.jianshu.com/p/106795175971)
+
+[Android ART运行时无缝替换Dalvik虚拟机的过程分析](http://blog.csdn.net/luoshengyang/article/details/18006645)
 
 # 网络
 
