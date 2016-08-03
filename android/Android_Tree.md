@@ -26,6 +26,9 @@
 
 [res资源目录详解](https://github.com/czhzero/skill_tree/blob/master/android/article/res资源目录详解.md)
 
+## 缓存\内存管理
+
+[Android内存泄漏常见场景分析](http://www.czhzero.com/2016/07/04/memory-leak-possibility/)
 
 
 # 网络
