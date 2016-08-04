@@ -2,6 +2,8 @@
 
 ## 基础语法
 
+[Java类初始化顺序](http://blog.csdn.net/czhpxl007/article/details/50558319)
+
 ## 面向对象
 
 [Java多态性](https://github.com/czhzero/skill_tree/blob/master/android/article/Java多态.md)
