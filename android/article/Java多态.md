@@ -138,7 +138,7 @@ JAVA虚拟机调用一个类方法时，它会基于对象引用的类型(通常
 
   下面是一种JAVA对象的内存表示：
   
-  ![](http://o7y1sf21i.bkt.clouddn.com/blog/8/binding1.png)
+  ![](http://o7y1sf21i.bkt.clouddn.com/blog/009/binding1.png)
 
   方法数据存放在类的方法区中，包含一个方法的具体实现的字节码二进制。方法指针直接指向这个方法在内存中的起始位置，通过方法指针就可以找到这个方法。
   
@@ -193,7 +193,7 @@ public class Derive extends Base
  上例中的Base和Derive的方法表如下：
 
 
-  ![](http://o7y1sf21i.bkt.clouddn.com/blog/8/binding2.png)
+  ![](http://o7y1sf21i.bkt.clouddn.com/blog/009/binding2.png)
 
   在这个例子里，test()方法在Base和Derive的方法表中都是同一个位置-位置1。在Base方法表中，test()指针是Base的test()方法内存地址；而在Derive方法表中，方法表的位置1放置的是Derive的test()方法内存地址。
 
