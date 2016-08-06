@@ -70,6 +70,11 @@
 
 # 编码规范
 
+[Java代码规范](http://czhzero.coding.me/2016/06/29/java-rules/)
+
+[Java代码规范之CheckStyle + Git Hook](http://czhzero.coding.me/2016/06/29/checkstyle-githook/)
+
+
 # 代码协作
 
 # 开发工具
