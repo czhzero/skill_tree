@@ -12,6 +12,9 @@
 
 ## 泛型
 
+[Java泛型](https://github.com/czhzero/skill_tree/blob/master/android/article/Java泛型1.md)
+
+
 ## 异常
 
 ## 枚举
