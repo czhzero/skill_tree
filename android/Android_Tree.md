@@ -53,6 +53,8 @@
 
 ## gradle
 
+
+
 ## maven&jcenter
 
 ## 混淆
@@ -79,6 +81,11 @@
 
 
 # 代码协作
+
+[如何使用Android Studio把自己的Android library分享到jCenter和Maven Central](http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2015/0623/3097.html)
+
+[maven私服搭建及gradle上传](http://www.jianshu.com/p/b1fe26d5b8c8)
+
 
 # 开发工具
 
