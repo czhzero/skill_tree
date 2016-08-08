@@ -4,6 +4,8 @@
 
 [Java基础知识](https://github.com/czhzero/LearningNotes/blob/master/Part2/JavaSE/Java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.md)
 
+[String源码分析](https://github.com/GeniusVJR/LearningNotes/blob/master/Part2/JavaSE/String%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90.md)
+
 [Java类初始化顺序](http://blog.csdn.net/czhpxl007/article/details/50558319)
 
 ## 面向对象
