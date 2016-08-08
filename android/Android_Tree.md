@@ -8,6 +8,8 @@
 
 [Java类初始化顺序](http://blog.csdn.net/czhpxl007/article/details/50558319)
 
+[Java集合框架](https://github.com/GeniusVJR/LearningNotes/blob/master/Part2/JavaSE/Java%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6.md)
+
 ## 面向对象
 
 [Java多态性](https://github.com/czhzero/skill_tree/blob/master/android/article/Java多态.md)
