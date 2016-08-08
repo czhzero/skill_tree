@@ -2,6 +2,8 @@
 
 ## 基础语法
 
+[Java基础知识](https://github.com/czhzero/LearningNotes/blob/master/Part2/JavaSE/Java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.md)
+
 [Java类初始化顺序](http://blog.csdn.net/czhpxl007/article/details/50558319)
 
 ## 面向对象
