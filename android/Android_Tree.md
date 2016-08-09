@@ -73,6 +73,8 @@
 
 # 架构
 
+[Android架构合集](https://github.com/Juude/Awesome-Android-Architecture)
+
 # 第三方组件和平台
 
 # Linux基础
