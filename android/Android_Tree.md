@@ -51,9 +51,11 @@
 
 ## View
 
+### View & View Group
 
+[Android View的绘制流程](http://www.jianshu.com/p/5a71014e7b1b)
 
-### 事件分发事件
+### 事件分发机制
 
 [图解 Android 事件分发机制](http://www.jianshu.com/p/e99b5e8bd67b)
 
