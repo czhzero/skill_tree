@@ -49,6 +49,15 @@
 
 [Android ART运行时无缝替换Dalvik虚拟机的过程分析](http://blog.csdn.net/luoshengyang/article/details/18006645)
 
+## View
+
+
+
+### 事件分发事件
+
+[图解 Android 事件分发机制](http://www.jianshu.com/p/e99b5e8bd67b)
+
+
 # 网络
 
 # 设计模式
