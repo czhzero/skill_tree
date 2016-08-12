@@ -74,6 +74,8 @@
 
 ## gradle
 
+[groovy基本语法](http://www.sunnyang.com/521.html)
+
 
 
 ## maven&jcenter
