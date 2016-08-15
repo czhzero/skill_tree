@@ -1,4 +1,4 @@
-# Gradle for Android Basics
+# Gradle for Andoid 学习笔记(一) 
 
 ## Gradle Build Files in Android
 
