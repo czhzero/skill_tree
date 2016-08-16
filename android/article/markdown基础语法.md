@@ -174,14 +174,14 @@ Mac环境下，推荐你使用MacDown编辑器，轻量级本地编辑器，您�
 代码：
 
 ```
-`single code line`
+     `single code line`
 
- ```
- code line1
- code line2
- code line3
+     ```
+      code line1
+      code line2
+      code line3
 
- ```
+     ```
 
 ```
 
