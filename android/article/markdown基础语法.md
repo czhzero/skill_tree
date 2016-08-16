@@ -314,6 +314,7 @@ ___粗斜体___
 > 
 > <font style="BACKGROUND-COLOR: #cccccc" color=#ff6600>给文字加上背景色</FONT>
 
+ps: 部分编辑器对HTML的font标签并不支持
 
 ## 注脚
 
@@ -329,7 +330,10 @@ ___粗斜体___
 效果:
 
 这是一个注脚[^footnote1]的样例
+
+
 [^footnote1]: 我就是那个注脚
+
 
 
 
