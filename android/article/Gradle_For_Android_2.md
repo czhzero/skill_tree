@@ -1519,3 +1519,7 @@ def helloWorld(){
 上面一个文件名定义为Structure.groovy，在这个文件中包含了类的定义和独立方法声明，它编译之后会发生什么呢。首先会生成一个与文件同名的class文件。所有的松语句都集中在run方法中，并且run方法被该类的main方法调用。独立方法被编译成了类的静态方法。与Java相似，每一个独立的类都会被编译成一个单独的class文件。因此编译Structure.groovy文件最后会被编译成Hello.class、World.class和Structure.class。上面一个文件名定义为Structure.groovy，在这个文件中包含了类的定义和独立方法声明，它编译之后会发生什么呢。首先会生成一个与文件同名的class文件。所有的松语句都集中在run方法中，并且run方法被该类的main方法调用。独立方法被编译成了类的静态方法。与Java相似，每一个独立的类都会被编译成一个单独的class文件。因此编译Structure.groovy文件最后会被编译成Hello.class、World.class和Structure.class。
 
 
+## 参考文献
+
+[Groovy进阶之函数、闭包和类](http://www.sunnyang.com/522.html)
+[《Groovy语言规范》-语法](http://ifeve.com/groovy-syntax/)
