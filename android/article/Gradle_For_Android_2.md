@@ -1163,3 +1163,359 @@ assert !person.containsKey('key') （3）
 
 （3）但映射不像之前包含key键
 
+
+## Groovy 函数与闭包
+
+### 函数
+
+有些人可能对函数和方法的叫法一直不太清楚。事实上没有本质区别，在面向过程的语言中一般称为函数，在函数式编程中一般都叫做函数。方法的一般是类的方法，在某一个类中定义的称之为方法。
+
+在Groovy中除非指定了确定的返回类型，void也可以作为返回值的一种，否则定义函数必须加上关键字def。
+
+```
+String getString(){
+    return "hello world"
+}
+ 
+def getDef(){
+    return "hello world"
+}
+ 
+void printSomething(){
+    println "hello worlld"
+}
+ 
+//错误的定义，编译可以通过，但是运行时报错
+//getString(){
+//    return "hello world"
+//}
+
+```
+
+在定义函数需要传参时可以不设置设置参数的类型，默认是Object类型的，如果用def关键字设置参数类型，事实上也是使用的Object定义参数的。
+
+```
+def printSomething01(param){
+    println param
+}
+ 
+def printSomething02(int param){
+    println param
+}
+ 
+def printSomething03(def param){
+    println param
+}
+
+```
+
+在调用函数时，如果所定义的函数有参数，在使用的时候可以不使用括号，但是必须得传入参数，参数与函数名以空格隔开。
+
+如果不出入参数必须添加括号，否则代码编译可以通过，但是运行时会出错，会将函数误认为是一个属性。
+
+如果所定义的函数没有参数，在调用的时候必须添加括号，否则运行出错，会将函数误认为是一个属性。
+
+函数调用的时候参数的个数必须匹配，否则也会报错，提示没有定义该函数，如果单个参数除外，可以不用输入参数，系统默认赋值null。
+
+```
+
+def printSomething(param01,param02){
+    println param01+param02
+}
+
+printSomething ("hello","world")//helloworld
+printSomething "hello","world"//helloworld
+
+//参数个数不对，报错
+//printSomething ("hello")
+
+def printOne(param){
+    println param
+}
+printOne()//null
+
+
+```
+
+函数可以有返回值，如果有显示地使用return关键字，则返回return指定的返回值，其后面的语句不再执行。
+
+如果没有显式地使用return关键字，则返回函数最后一行语句的运行结果。
+
+如果使用void关键字代替def关键字定义函数，则函数的返回值将为null。
+
+```
+def printSomething(){
+    return "hello"
+    println "world"
+}
+println printSomething()//hello
+ 
+def printSomething01(){
+    "hello world"
+    1
+}
+println printSomething01()//1
+ 
+def printSomething02(){
+    1
+    "hello world"
+}
+println printSomething02()//hello world
+
+```
+
+支持函数重载，当参数个数不同时，函数名称可以同名。
+
+```
+def printSomething(param){
+    println param
+}
+ 
+def printSomething(param01,param02){
+    println param01+" "+param02
+}
+ 
+printSomething("hello")
+printSomething("hello","world")
+
+```
+
+函数内不可以访问函数外的变量
+
+```
+int m=1
+def n="hello"
+//error
+def printSomething(){
+    println m//error
+    println n//error
+}
+printSomething()
+
+```
+
+Groovy支持不定长参数。
+
+```
+def printSomething(... params) {
+    println(params[0])
+}
+ 
+printSomething("hello")
+printSomething("hello","world")
+
+```
+
+函数可以赋值给其它函数，使用语法标记&将函数赋予新的函数。
+
+```
+def printSomething() {
+    println("hello world")
+}
+ 
+//printSomething不可以加括号
+def printHello=this.&printSomething
+ 
+printHello()          //hello world
+printSomething()      //hello world
+
+```
+
+### 闭包
+
+Groovy中闭包是这么定义的:可以用作函数参数和方法参数的代码块。可以把这个代码块理解为一个函数指针。
+
+闭包的定义格式：
+
+```
+def xxx = { params -> code }
+//或者
+def xxx={code}
+
+```
+
+闭包可以访问外部的变量，记住一点方法是不能访问外部变量的。
+
+```
+def str="hello world"
+ 
+def closure={
+    println str
+}
+ 
+closure()//hello world
+
+```
+
+闭包是有返回值的，默认最后一行语句就是该闭包的返回值，如果最后一行语句没有不输入任何类型，闭包将返回null。
+
+```
+def closure = {
+    println "hello world"
+    return "I'm callback"
+}
+//hello world
+//I'm callback
+println closure()
+ 
+def noReturn={
+    println "hello world"
+}
+//hello world
+//null
+println noReturn()
+
+```
+
+闭包可以有参数，如果没有定义参数，会有一个隐式的默认参数it，如果没有参数可以将[参数]和[->]省略。
+
+如果存在参数，在[->]之前的就是参数，如果只有一个参数，参数可以省略。
+
+闭包中参数名称不能与闭包内或闭包外的参数名重名
+
+```
+def closure={
+    println "hello $it"
+}
+closure("admin")
+ 
+def closure={
+    param01,param02,param03->println param01+param02+param03
+}
+closure "hello","world","ok"
+ 
+def closure={
+    println it
+}
+closure "hello world"
+ 
+//编译时就不通过
+//def param
+//def closure={
+//    param->println param
+//}
+
+```
+
+闭包可以作为一个参数传递给另一个闭包，也可以在闭包中返回一个闭包。
+
+```
+def toTriple = { n -> n * 3 }
+def runTwice = { a, c -> c(c(a)) }
+println runTwice(5, toTriple)//45
+ 
+def times = { x -> { y -> x * y } }
+println times(3)(4)//12
+
+```
+
+
+闭包的一些快捷写法，当闭包作为闭包或方法的最后一个参数，可以将闭包从参数圆括号中提取出来接在最后。
+
+如果闭包中不包含闭包，则闭包或方法参数所在的圆括号也可以省略。
+
+对于有多个闭包参数的，只要是在参数声明最后的，均可以按上述方式省略。
+
+```
+def runTwice = { a, c -> c(c(a)) }
+println runTwice(5, { it * 3 }) //45 usual syntax
+println runTwice(5) { it * 3 } //45
+ 
+def closure = {
+    param -> println param
+}
+closure "hello world"
+ 
+def runTwoClosures = { a, c1, c2 -> c1(c2(a)) }
+//when more than one closure as last params
+assert runTwoClosures(5, { it * 3 }, { it * 4 }) == 60 //usual syntax
+assert runTwoClosures(5) { it * 3 } { it * 4 } == 60 //shortcut form
+
+```
+
+闭包接受参数的规则，会将参数列表中所有有键值关系的参数，作为一个map组装，传入闭包作为调用闭包的第一个参数。
+
+```
+def f= {m, i, j-> i + j + m.x + m.y }
+println f(6, x:4, y:3, 7)//20
+
+```
+
+如果闭包的参数声明中没有list，那么传入参数可以设置为list，里面的参数将分别传入闭包参数。
+
+```
+def c = { a, b, c -> a + b + c }
+def list = [1, 2, 3]
+println c(list) // 6
+
+```
+
+## Groovy 类与对象
+
+Groovy类与Java类似，在字节码级都被编译成Java类，由于其在定义变量上面的灵活性，所以在新建一个Groovy类时还是有一些不同的，增加了许多灵活性。由于Groovy是松散型语言，它并不强制你给属性、方法参数和返回值定义类型。如果没有指定类型，在字节码级别会被编译成Object。在定义类的属性时不用刻意加上权限修饰符，默认就是public的。
+
+```
+class Book{
+    def title
+    String author
+	private int price
+	
+    public Book(title){
+        this.title=title
+    }
+    boolean order(int isbn){
+        true
+    }
+    def title(){
+        "Booke Title"
+    }
+}
+
+Book book=new Book("Hello Groovy")
+book.order(1001)
+
+book.title//获取属性
+book.title()//访问方法
+
+```
+
+如果我们将Book类看做是一个JavaBean，事实上Groovy在编译完成后会自动帮助我们生成getter与setter方法，但是私有属性除外也就是说price属性我们不能使用getter与setter方法。
+
+```
+Book book=new Book("Hello Groovy")
+println book.getTitle()//Hello Groovy
+ 
+book.setTitle("New Groovy")
+println book.getTitle()//New Groovy
+ 
+println book.title////New Groovy
+
+```
+
+在Groovy中类名和文件名并不需要严格的映射关系，我们知道在Java中主类名必须与文件同名，但是在Groovy中一个文件可以定义多个public类。
+在Groovy中可以定义与任何类不相关的方法和语句，这些方法通常称为独立方法或者松方法。
+
+```
+
+class Hello{
+    public static String hello(){
+        return "hello"
+    }
+}
+class World{
+    public static String world(){
+        return "world"
+    }
+}
+ 
+println Hello.hello()+World.world()
+ 
+def helloWorld(){
+	return "hello world"
+}
+
+```
+
+上面一个文件名定义为Structure.groovy，在这个文件中包含了类的定义和独立方法声明，它编译之后会发生什么呢。首先会生成一个与文件同名的class文件。所有的松语句都集中在run方法中，并且run方法被该类的main方法调用。独立方法被编译成了类的静态方法。与Java相似，每一个独立的类都会被编译成一个单独的class文件。因此编译Structure.groovy文件最后会被编译成Hello.class、World.class和Structure.class。上面一个文件名定义为Structure.groovy，在这个文件中包含了类的定义和独立方法声明，它编译之后会发生什么呢。首先会生成一个与文件同名的class文件。所有的松语句都集中在run方法中，并且run方法被该类的main方法调用。独立方法被编译成了类的静态方法。与Java相似，每一个独立的类都会被编译成一个单独的class文件。因此编译Structure.groovy文件最后会被编译成Hello.class、World.class和Structure.class。
+
+

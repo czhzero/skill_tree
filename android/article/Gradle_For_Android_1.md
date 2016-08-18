@@ -3,7 +3,9 @@
 
 ## 什么是Gradle
 
-Gradle是一个构建系统, Android Studio默认创建的project都是基于Gradle构建脚本。Gradle具有如下特点,
+Gradle是一个构建系统, Android Studio默认创建的project都是基于Gradle构建脚本。在Gradle爆红之前，常用的构建工具是ANT，然后又进化到Maven。ANT和Maven这两个工具其实也还算方便，现在还有很多地方在使用。但是二者都有一些缺点，所以让更懒得人觉得不是那么方便。比如，Maven编译规则是用XML来编写的。XML虽然通俗易懂，但是很难在xml中描述if{某条件成立，编译某文件}/else{编译其他文件}这样有不同条件的任务。相比而言，Gradle使用是DSL,领域相关语言，比起xml更加方便。
+
+Gradle具有如下特点,
 
 1. 声明构建和协议构建
 
@@ -52,7 +54,7 @@ Gradle是一个构建系统, Android Studio默认创建的project都是基于Gra
 	Gradle是开源项目，并且采用是ASL协议授权。
 
 
-## Android Studio 的Gradle构建脚本 
+## Android Studio 的 Gradle 构建脚本 
 
 通过Android Studio新建一个Android项目，项目中会自动帮你创建三个gradle文件，settings.gradle,build.gradle,app/build.gradle.
 
@@ -144,7 +146,6 @@ task clean(type: Delete) {
 
 ```
 
-//TODO
 
 - SubProject build.gradle 
 
@@ -215,32 +216,145 @@ distributionUrl=https\://services.gradle.org/distributions/gradle-2.10-all.zip
 ![Gradle Version](http://o7y1sf21i.bkt.clouddn.com/blog/005/lALOXyEtXczizQUC_1282_226.png)
 
 
+## Gradle 工作流程
 
-## Gradle 命令介绍
+![](http://o7y1sf21i.bkt.clouddn.com/blog/011/20150905194317170.png)
 
-- 常用命令
+Gradle执行的生命周期，包含三个阶段，
+
+- 初始化阶段：执行settings.gradle , project实例在这儿创建，如果有多个模块，即有多个build.gradle文件，多个project将会被创建。
+
+- 配置阶段：在该阶段，解析每个project中的build.gradle。比如multi-project build例子中，解析每个子目录中的build.gradle。在这两个阶段之间，我们可以加一些定制化的Hook。这当然是通过API来添加的。
+
+- 执行阶段：这一阶段，gradle会决定哪一个tasks会被执行，哪一个tasks会被执行完全依赖开始构建时传入的参数和当前所在的文件夹位置有关。
+
+
+
+## Gradle 基本组件
+
+Gradle中，每一个待编译的工程都叫一个Project。每一个Project在构建的时候都包含一系列的Task。比如一个Android APK的编译可能包含：Java源码编译Task、资源编译Task、JNI编译Task、lint检查Task、打包生成APK的Task、签名Task等。
+一个Project到底包含多少个Task，其实是由编译脚本指定的插件决定。插件是什么呢？插件就是用来定义Task，并具体执行这些Task的东西。
+刚才说了，Gradle是一个框架，作为框架，它负责定义流程和规则。而具体的编译工作则是通过插件的方式来完成的。比如编译Java有Java插件，编译Groovy有Groovy插件，编译Android APP有Android APP插件，编译Android Library有Android Library插件
+好了。到现在为止，你知道Gradle中每一个待编译的工程都是一个Project，一个具体的编译过程是由一个一个的Task来定义和执行的。
+
+
+> 每一个Library和每一个App都是单独的Project。根据Gradle的要求，每一个Project在其根目录下都需要有一个build.gradle。build.gradle文件就是该Project的编译脚本，类似于Makefile。
+
+> 对于multi-projects build，需要在根目录下也放一个build.gradle，和一个settings.gradle
+> 
+> 一个Project是由若干tasks来组成的，当gradlexxx的时候，实际上是要求gradle执行xxx任务。这个任务就能完成具体的工作。
+
+### 常用命令
+
+- ./gradlew projects
+
+查看project数目
+
+- ./gradlew :tasks
+
+查看所有的任务
+
+```
+------------------------------------------------------------
+All tasks runnable from root project
+------------------------------------------------------------
+
+Android tasks
+-------------
+androidDependencies - Displays the Android dependencies of the project.
+signingReport - Displays the signing info for each variant.
+sourceSets - Prints out all the source sets defined in this project.
+
+Build tasks
+-----------
+assemble - Assembles all variants of all applications and secondary packages.
+assembleAndroidTest - Assembles all the Test applications.
+assembleDebug - Assembles all Debug builds.
+assembleRelease - Assembles all Release builds.
+build - Assembles and tests this project.
+buildDependents - Assembles and tests this project and all projects that depend on it.
+buildNeeded - Assembles and tests this project and all projects it depends on.
+clean - Deletes the build directory.
+compileDebugAndroidTestSources
+compileDebugSources
+compileDebugUnitTestSources
+compileReleaseSources
+compileReleaseUnitTestSources
+mockableAndroidJar - Creates a version of android.jar that's suitable for unit tests.
+
+Build Setup tasks
+-----------------
+init - Initializes a new Gradle build. [incubating]
+wrapper - Generates Gradle wrapper files. [incubating]
+
+Help tasks
+----------
+buildEnvironment - Displays all buildscript dependencies declared in root project 'GradleStudy'.
+components - Displays the components produced by root project 'GradleStudy'. [incubating]
+dependencies - Displays all dependencies declared in root project 'GradleStudy'.
+dependencyInsight - Displays the insight into a specific dependency in root project 'GradleStudy'.
+help - Displays a help message.
+model - Displays the configuration model of root project 'GradleStudy'. [incubating]
+projects - Displays the sub-projects of root project 'GradleStudy'.
+properties - Displays the properties of root project 'GradleStudy'.
+tasks - Displays the tasks runnable from root project 'GradleStudy' (some of the displayed tasks may belong to subprojects).
+
+Install tasks
+-------------
+installDebug - Installs the Debug build.
+installDebugAndroidTest - Installs the android (on device) tests for the Debug build.
+uninstallAll - Uninstall all applications.
+uninstallDebug - Uninstalls the Debug build.
+uninstallDebugAndroidTest - Uninstalls the android (on device) tests for the Debug build.
+uninstallRelease - Uninstalls the Release build.
+
+Verification tasks
+------------------
+check - Runs all checks.
+connectedAndroidTest - Installs and runs instrumentation tests for all flavors on connected devices.
+connectedCheck - Runs all device checks on currently connected devices.
+connectedDebugAndroidTest - Installs and runs the tests for debug on connected devices.
+deviceAndroidTest - Installs and runs instrumentation tests using all Device Providers.
+deviceCheck - Runs all device checks using Device Providers and Test Servers.
+lint - Runs lint on all variants.
+lintDebug - Runs lint on the Debug build.
+lintRelease - Runs lint on the Release build.
+test - Run unit tests for all variants.
+testDebugUnitTest - Run unit tests for the debug build.
+testReleaseUnitTest - Run unit tests for the release build.
+
+Other tasks
+-----------
+clean
+jarDebugClasses
+jarReleaseClasses
+transformResourcesWithMergeJavaResForDebugUnitTest
+transformResourcesWithMergeJavaResForReleaseUnitTest
 
 ```
 
-## 编译整个项目
-> ./gradlew build
+
+- ./gradlew build
+
+项目代码编译
+
+- ./gradlew clean
+
+清除项目build临时文件
+
+- ./gradlew assemble
+
+打包命令，会生成两个debug和release两种类型的apk，
+如果要单独生成指定类型apk. 可执行 `./gradlew assembleRelease` 
+和 `./gradlew assembleDebug` 两个命令
 
 
-## 编译指定子项目, 子项目从settings.gradle中获取
-> ./gradlew :app:build
+- ./gradlew androidDependencies
 
-## 输出所有Gradle任务
-> ./gradlew :tasks
-
-## 打包命令
-> ./gradlew assemble
-> ./gradlew assembleRelease
-> ./gradlew assembleDebug
+显示项目所有的依赖包
 
 
-```
-
-- 命令参数
+### 常用命令参数
 
 gradle命令可以同时执行多个任务, 多任务之间用空格隔开,
 若包含多个相同任务，也只会执行一次。
@@ -315,12 +429,19 @@ gradle的任务名称，可以进行简写，只要能够唯一确定该任务�
 
 ```
 
-- 通过Android Studio执行
+### 通过Android Studio执行Task
 
 Android Studio在界面最右侧，有个Gradle Project浮动窗，
 打开后，里面将项目中所有的task都放在了里面，双击即可运行。
 
 ![](http://o7y1sf21i.bkt.clouddn.com/blog/011/lALOaFpKs80CXM0CWw_603_604.png)
+
+
+
+## 总结
+
+本章主要介绍了Gradle的基础知识，以及整个Android Studio结构，看完应该会对整个Android Studio的构建过程有些了解了。
+
 
 
 
@@ -330,4 +451,5 @@ Android Studio在界面最右侧，有个Gradle Project浮动窗，
 
 [Gradle Recipes for Android](https://gradle.org/getting-started-android-build/)
 
+[深入理解Android之Gradle](http://blog.csdn.net/innost/article/details/48228651)
 
