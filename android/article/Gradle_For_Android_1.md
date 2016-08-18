@@ -228,6 +228,79 @@ Gradle执行的生命周期，包含三个阶段，
 
 - 执行阶段：这一阶段，gradle会决定哪一个tasks会被执行，哪一个tasks会被执行完全依赖开始构建时传入的参数和当前所在的文件夹位置有关。
 
+在settings.gradle添加如下内容,
+
+```
+
+gradle.beforeProject {
+    Project project ->
+        println project.name + " is before Project"
+}
+
+
+gradle.taskGraph.whenReady {
+    TaskExecutionGraph graph ->
+        println graph.allTasks.each {
+            Task task ->
+                println task.name + 'is ready'
+        }
+}
+
+gradle.buildFinished {
+    println 'gralde build finish'
+}
+
+
+
+```
+
+运行结果:
+
+```
+GradleStudy is before Project		//主项目
+app is before Project				//子项目
+
+...
+
+preBuildis ready
+preDebugBuildis ready
+checkDebugManifestis ready
+preReleaseBuildis ready
+prepareComAndroidSupportAnimatedVectorDrawable2340Libraryis ready
+prepareComAndroidSupportAppcompatV72340Libraryis ready
+prepareComAndroidSupportDesign2340Libraryis ready
+prepareComAndroidSupportRecyclerviewV72340Libraryis ready
+prepareComAndroidSupportSupportV42340Libraryis ready
+prepareComAndroidSupportSupportVectorDrawable2340Libraryis ready
+prepareDebugDependenciesis ready
+compileDebugAidlis ready
+
+...
+
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:app:prepareComAndroidSupportAnimatedVectorDrawable2340Library UP-TO-DATE
+:app:prepareComAndroidSupportAppcompatV72340Library UP-TO-DATE
+:app:prepareComAndroidSupportDesign2340Library UP-TO-DATE
+:app:prepareComAndroidSupportRecyclerviewV72340Library UP-TO-DATE
+:app:prepareComAndroidSupportSupportV42340Library UP-TO-DATE
+:app:prepareComAndroidSupportSupportVectorDrawable2340Library UP-TO-DATE
+:app:prepareDebugDependencies
+:app:compileDebugAidl UP-TO-DATE
+:app:compileDebugRenderscript UP-TO-DATE
+
+...
+
+BUILD SUCCESSFUL
+
+Total time: 6.882 secs
+gralde build finish   //最后显示
+
+
+```
+
 
 
 ## Gradle 基本组件
