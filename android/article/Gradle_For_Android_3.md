@@ -137,6 +137,9 @@ targetSdkVersion	   //目标sdk版本
 
 ### signingConfigs
 
+
+
+
 ### productFlavors
 
 ### applicationVariants

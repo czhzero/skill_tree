@@ -502,6 +502,25 @@ gradle的任务名称，可以进行简写，只要能够唯一确定该任务�
 
 ```
 
+gradle可以通过命令行传递任意参数，例如
+
+```
+> ./gradlew assembleRelease -Psuffix=V1
+
+```
+
+gradle通过 `-P + 参数名称 + 参数内容` 的方式传递给project对象。
+然后在build.gradle中根据参数名称，获取到属性值。
+
+除了命令行传参之外，还有另外一种传递参数的方式。
+
+```
+//在项目的gradle.properties中添加如下代码
+suffix=V1
+
+```
+
+
 ### 通过Android Studio执行Task
 
 Android Studio在界面最右侧，有个Gradle Project浮动窗，
