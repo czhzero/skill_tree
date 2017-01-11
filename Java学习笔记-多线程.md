@@ -279,8 +279,89 @@ public interface RunnableFuture<V> extends Runnable, Future<V> {
 
 原因在于通过ft.get()方法获取子线程call()方法的返回值时，当子线程此方法还未执行完毕，ft.get()方法会一直阻塞，直到call()方法执行完毕才能取到返回值。
 
+future模式：并发模式的一种，可以有两种形式，即无阻塞和阻塞，分别是isDone和get。其中Future对象用来存放该线程的返回值以及状态
+
+```
+ExecutorService e = Executors.newFixedThreadPool(3);
+ //submit方法有多重参数版本，及支持callable也能够支持runnable接口类型.
+Future future = e.submit(new myCallable());
+future.isDone() //return true,false 无阻塞
+future.get() // return 返回值，阻塞直到该线程运行结束
+
+```
+
 上述主要讲解了三种常见的线程创建方式，对于线程的启动而言，都是调用线程对象的start()方法，需要特别注意的是：**不能对同一线程对象两次调用start()方法**。
 
+## 高级线程控制类
+
+Java1.5提供了一个非常高效实用的多线程包:java.util.concurrent, 提供了大量高级工具,可以帮助开发者编写高效、易维护、结构清晰的Java多线程程序。
+
+### ThreadLocal类
+
+用处：保存线程的独立变量。对一个线程类（继承自Thread)
+当使用ThreadLocal维护变量时，ThreadLocal为每个使用该变量的线程提供独立的变量副本，所以每一个线程都可以独立地改变自己的副本，而不会影响其它线程所对应的副本。常用于用户登录控制，如记录session信息。
+
+实现：每个Thread都持有一个TreadLocalMap类型的变量（该类是一个轻量级的Map，功能与map一样，区别是桶里放的是entry而不是entry的链表。功能还是一个map。）以本身为key，以目标为value。
+主要方法是get()和set(T a)，set之后在map里维护一个threadLocal -> a，get时将a返回。ThreadLocal是一个特殊的容器。
+
+### 原子类
+
+如果使用atomic wrapper class如atomicInteger，或者使用自己保证原子的操作，则等同于synchronized
+
+```
+//返回值为boolean
+AtomicInteger.compareAndSet(int expect,int update)
+
+```
+该方法可用于实现乐观锁，考虑文中最初提到的如下场景：a给b付款10元，a扣了10元，b要加10元。此时c给b2元，但是b的加十元代码约为：
+
+```
+if(b.value.compareAndSet(old, value)){
+   return ;
+}else{
+   //try again
+   // if that fails, rollback and log
+}
+
+```
+
+AtomicReference
+
+对于AtomicReference 来讲，也许对象会出现，属性丢失的情况，即oldObject == current，但是oldObject.getPropertyA != current.getPropertyA。
+这时候，AtomicStampedReference就派上用场了。这也是一个很常用的思路，即加上版本号
+
+### Lock类
+
+lock: 在java.util.concurrent包内。共有三个实现：
+
+```
+ReentrantLock
+ReentrantReadWriteLock.ReadLock
+ReentrantReadWriteLock.WriteLock
+
+```
+
+主要目的是和synchronized一样， 两者都是为了解决同步问题，处理资源争端而产生的技术。功能类似但有一些区别。
+
+lock更灵活，可以自由定义多把锁的枷锁解锁顺序（synchronized要按照先加的后解顺序）
+提供多种加锁方案，lock 阻塞式, trylock 无阻塞式, lockInterruptily 可打断式， 还有trylock的带超时时间版本。
+本质上和监视器锁（即synchronized是一样的）
+能力越大，责任越大，必须控制好加锁和解锁，否则会导致灾难。
+和Condition类的结合。
+
+### 容器类
+
+- BlockingQueue
+
+阻塞队列。该类是java.util.concurrent包下的重要类，通过对Queue的学习可以得知，这个queue是单向队列，可以在队列头添加元素和在队尾删除或取出元素。类似于一个管　　道，特别适用于先进先出策略的一些应用场景。普通的queue接口主要实现有PriorityQueue（优先队列），有兴趣可以研究
+
+- ConcurrentHashMap
+
+高效的线程安全哈希map。请对比hashTable , concurrentHashMap, HashMap
+
+### 管理类
+
+- ThreadPoolExecutor
 
 ## 参考文献
 
