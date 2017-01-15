@@ -1,2 +1,0 @@
-- [java并发编程系列](http://blog.csdn.net/column/details/concurrency.html)
-- [Corn](http://www.cnblogs.com/lwbqqyumidi)
