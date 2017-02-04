@@ -51,6 +51,8 @@
 
 [Android ART运行时无缝替换Dalvik虚拟机的过程分析](http://blog.csdn.net/luoshengyang/article/details/18006645)
 
+[JVM-运行时数据区域](https://github.com/czhzero/skill_tree/blob/master/android/article/JVM-运行时数据区域.md)
+
 ## 权限机制
 
 [Android权限机制](http://mp.weixin.qq.com/s?__biz=MzIxNzEyMzIzOA==&mid=2652313851&idx=1&sn=a15519b65e7bedefbb566fe6d01935cb&scene=4#wechat_redirect)
