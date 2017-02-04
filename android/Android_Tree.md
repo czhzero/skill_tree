@@ -29,6 +29,8 @@
 
 ## 并发/死锁
 
+[](https://github.com/czhzero/skill_tree/blob/master/android/article/实例揭示notify()和notifyAll()的本质区别.md)
+
 ## 类型/反射
 
 # Android
@@ -67,6 +69,8 @@
 # 网络
 
 # 设计模式
+
+[设计模式-六大原则](https://github.com/czhzero/skill_tree/blob/master/android/article/设计模式-六大原则.md)
 
 # 签名打包
 
