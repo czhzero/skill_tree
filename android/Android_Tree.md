@@ -117,3 +117,8 @@
 [markdown基础语法](https://github.com/czhzero/skill_tree/blob/master/android/article/markdown基础语法.md)
 
 
+# 推荐网站
+
+- [Trinea](http://www.trinea.cn/)
+- [java并发编程系列](http://blog.csdn.net/column/details/concurrency.html)
+- [Corn](http://www.cnblogs.com/lwbqqyumidi)
