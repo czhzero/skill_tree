@@ -72,7 +72,9 @@
 
 # 设计模式
 
-[设计模式-六大原则](https://github.com/czhzero/skill_tree/blob/master/android/article/设计模式-六大原则.md)
+[设计模式-六大原则](https://github.com/czhzero/skill_tree/blob/master/android/article/designpattern/设计模式-六大原则.md)
+
+[设计模式-享元模式](https://github.com/czhzero/skill_tree/blob/master/android/article/designpattern/设计模式-享元模式.md)
 
 # 签名打包
 
