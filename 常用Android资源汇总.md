@@ -165,6 +165,11 @@
 
 * [开源项目之LeakCanary源码分析](http://www.jianshu.com/p/5032c52c6b0a)
 
+
+### 数据结构
+
+* [HashMap实现原理分析](http://blog.csdn.net/vking_wang/article/details/14166593)
+
 ### 单元测试系列
 
 * [unit-testing-with-android-studio](http://rexstjohn.com/unit-testing-with-android-studio/)
