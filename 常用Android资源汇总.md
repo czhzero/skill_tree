@@ -166,6 +166,12 @@
 * [开源项目之LeakCanary源码分析](http://www.jianshu.com/p/5032c52c6b0a)
 
 
+### View与Event
+
+* [Android事件分发机制完全解析，带你从源码的角度彻底理解(上)](http://blog.csdn.net/guolin_blog/article/details/9097463/)
+* [Android事件分发机制完全解析，带你从源码的角度彻底理解(下)](http://blog.csdn.net/guolin_blog/article/details/9153747)
+
+
 ### 数据结构
 
 * [HashMap实现原理分析](http://blog.csdn.net/vking_wang/article/details/14166593)
