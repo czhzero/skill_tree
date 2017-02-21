@@ -8,3 +8,8 @@
 * [java集合源码剖析](http://blog.csdn.net/column/details/collection.html)
 * [Linux的进程/线程间通信方式总结](http://blog.csdn.net/kobejayandy/article/details/18863543)
 * [Java 并发专题 ： Semaphore 实现 互斥 与 连接池](http://blog.csdn.net/lmj623565791/article/details/26810813)
+* [浮窗开发之窗口层级](http://www.liuguangli.win/archives/476)
+* [Activity是如何接收到touch事件的（窗口与用户输入系统)](http://blog.csdn.net/huangjijie123456/article/details/51365097)
+* [Android EventBus源码解析 带你深入理解EventBus](http://blog.csdn.net/lmj623565791/article/details/40920453)
+* [HashMap实现原理分析](http://blog.csdn.net/vking_wang/article/details/14166593)
+* [ReentrantLock可重入锁的使用场景](https://my.oschina.net/noahxiao/blog/101558)
