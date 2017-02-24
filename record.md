@@ -8,8 +8,21 @@
 * [java集合源码剖析](http://blog.csdn.net/column/details/collection.html)
 * [Linux的进程/线程间通信方式总结](http://blog.csdn.net/kobejayandy/article/details/18863543)
 * [Java 并发专题 ： Semaphore 实现 互斥 与 连接池](http://blog.csdn.net/lmj623565791/article/details/26810813)
+
 * [浮窗开发之窗口层级](http://www.liuguangli.win/archives/476)
 * [Activity是如何接收到touch事件的（窗口与用户输入系统)](http://blog.csdn.net/huangjijie123456/article/details/51365097)
 * [Android EventBus源码解析 带你深入理解EventBus](http://blog.csdn.net/lmj623565791/article/details/40920453)
 * [HashMap实现原理分析](http://blog.csdn.net/vking_wang/article/details/14166593)
 * [ReentrantLock可重入锁的使用场景](https://my.oschina.net/noahxiao/blog/101558)
+
+* [Android 三大图片缓存原理、特性对比](http://www.trinea.cn/android/android-image-cache-compare/)
+* [Android 数据库升级完整解决方案](http://www.tuicool.com/articles/2iyU3aQ)
+
+* [Android推送技术研究](http://www.jianshu.com/p/584707554ed7)
+* [Android微信智能心跳方案](http://mp.weixin.qq.com/s?__biz=MzAwNDY1ODY2OQ==&mid=207243549&idx=1&sn=4ebe4beb8123f1b5ab58810ac8bc5994&scene=4#wechat_redirect)
+
+* [那些我们用过的Android开源图片加载框架](http://www.jianshu.com/p/3ac30878c72c)
+* [Android性能优化总结](http://blog.csdn.net/christopher_411524/article/details/50582740)
+* [【Java并发编程】并发编程大合集](http://blog.csdn.net/column/details/concurrency.html?&page=1)
+* [Android博客周刊专题之＃插件化开发＃](http://www.androidblog.cn/index.php/Index/detail/id/16)
+* [DroidPlugin代码分析(四) 进程管理](http://blog.csdn.net/turkeycock/article/details/51298338)
