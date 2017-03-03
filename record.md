@@ -26,3 +26,14 @@
 * [【Java并发编程】并发编程大合集](http://blog.csdn.net/column/details/concurrency.html?&page=1)
 * [Android博客周刊专题之＃插件化开发＃](http://www.androidblog.cn/index.php/Index/detail/id/16)
 * [DroidPlugin代码分析(四) 进程管理](http://blog.csdn.net/turkeycock/article/details/51298338)
+
+* [深度了解Android 7.0 ，你准备好了吗](http://mp.weixin.qq.com/s/8Nouh0ZZklqjxfachhoA-g)
+* [Java9都快发布了，Java8的十大新特性你了解多少呢？](http://www.cnblogs.com/pkufork/p/java_8.html)
+
+* [HTTP、HTTP2.0、SPDY、HTTPS你应该知道的一些事](http://mt.sohu.com/20160824/n465635124.shtml)
+
+* [HTTPS, SPDY和 HTTP/2性能的简单对比](http://www.tuicool.com/articles/YbQZziY )
+
+* [HTTPS, SPDY和 HTTP/2性能的简单对比 
+](http://www.360doc.com/content/14/0829/23/2735774_405711219.shtml)
+
