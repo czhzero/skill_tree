@@ -16,6 +16,8 @@
 
 ## 集合/容器
 
+[CSDN - Java集合源码剖析](http://blog.csdn.net/column/details/collection.html)
+
 ## 泛型
 
 [Java泛型](https://github.com/czhzero/skill_tree/blob/master/android/article/Java泛型1.md)
@@ -29,7 +31,9 @@
 
 ## 并发/死锁
 
-[](https://github.com/czhzero/skill_tree/blob/master/android/article/实例揭示notify()和notifyAll()的本质区别.md)
+[实例揭示notify()和notifyAll()的本质区别](https://github.com/czhzero/skill_tree/blob/master/android/article/实例揭示notify()和notifyAll()的本质区别.md)
+
+[CSDN-Java并发编程系列](http://blog.csdn.net/column/details/concurrency.html?&page=1)
 
 ## 类型/反射
 
@@ -62,6 +66,7 @@
 ### View & View Group
 
 [Android View的绘制流程](http://www.jianshu.com/p/5a71014e7b1b)
+[Activity是如何接收到touch事件](http://blog.csdn.net/huangjijie123456/article/details/51365097)
 
 ### 事件分发机制
 
@@ -69,6 +74,19 @@
 
 
 # 网络
+
+[Java TCP/IP Socket 编程学习笔记系列](http://blog.csdn.net/column/details/socket.html)
+
+[WebSocket 浅析](http://geek.csdn.net/news/detail/172310)
+
+
+# 性能优化
+
+# 图片加载框架
+
+[那些我们用过的Android开源图片加载框架](http://www.jianshu.com/p/3ac30878c72c)
+[Android 三大图片缓存原理、特性对比](http://www.trinea.cn/android/android-image-cache-compare/)
+
 
 # 设计模式
 
@@ -125,8 +143,6 @@
 [markdown基础语法](https://github.com/czhzero/skill_tree/blob/master/android/article/markdown基础语法.md)
 
 
-# 推荐网站
+# 面试指南
 
-- [Trinea](http://www.trinea.cn/)
-- [java并发编程系列](http://blog.csdn.net/column/details/concurrency.html)
-- [Corn](http://www.cnblogs.com/lwbqqyumidi)
+[Android 开发工程师面试指南](https://www.diycode.cc/wiki/androidinterview)
