@@ -102,7 +102,6 @@
 * [Java9都快发布了，Java8的十大新特性你了解多少呢？](http://www.cnblogs.com/pkufork/p/java_8.html)
 
 
-
 # 网络
 
 * [Java TCP/IP Socket 编程学习笔记系列](http://blog.csdn.net/column/details/socket.html)
@@ -124,17 +123,36 @@
 
 * [Android性能优化总结](http://blog.csdn.net/christopher_411524/article/details/50582740)
 
+* [Android性能优化(五)－ 安装包大小优化](http://www.czhzero.com/2017/03/08/performance-optimization-5/)
+
+* [Android性能优化(四)－ 代码优化](http://www.czhzero.com/2017/02/07/performance-optimization-4/)
+
+* [Android性能优化(三)－ 移动网络优化](http://www.czhzero.com/2017/02/07/performance-optimization-3/)
+
+* [Android性能优化(二)－ 数据库性能优化](http://www.czhzero.com/2017/02/07/performance-optimization-2/)
+
+* [Android性能优化(一)－UI优化](http://www.czhzero.com/2017/02/07/performance-optimization-1/)
+
 # 图片加载框架
 
 * [那些我们用过的Android开源图片加载框架](http://www.jianshu.com/p/3ac30878c72c)
+
 * [Android 三大图片缓存原理、特性对比](http://www.trinea.cn/android/android-image-cache-compare/)
 
 
 # 设计模式
 
-[设计模式-六大原则](https://github.com/czhzero/skill_tree/blob/master/android/article/designpattern/设计模式-六大原则.md)
+* [设计模式-六大原则](http://www.czhzero.com/2017/03/09/design-pattern-rule/)
 
-[设计模式-享元模式](https://github.com/czhzero/skill_tree/blob/master/android/article/designpattern/设计模式-享元模式.md)
+* [设计模式-单例模式](http://www.czhzero.com/2017/03/09/design-pattern-singleinstance/)
+
+* [设计模式-建造者模式](http://www.czhzero.com/2017/03/12/design-pattern-builder/)
+
+* [设计模式-工厂模式](http://www.czhzero.com/2017/03/12/design-pattern-factory/)
+
+* [设计模式-抽象工厂模式](http://www.czhzero.com/2017/03/12/design-pattern-abstract-factory/)
+
+* [设计模式-原型模式](http://www.czhzero.com/2017/03/12/design-pattern-prototype/)
 
 # 升级迭代
 
@@ -145,7 +163,6 @@
 * [Android博客周刊专题之＃插件化开发＃](http://www.androidblog.cn/index.php/Index/detail/id/16)
 
 * [DroidPlugin代码分析(四) 进程管理](http://blog.csdn.net/turkeycock/article/details/51298338)
-
 
 # 签名打包
 
@@ -199,4 +216,14 @@
 
 # 面试指南
 
-[Android 开发工程师面试指南](https://www.diycode.cc/wiki/androidinterview)
+* [Android 开发工程师面试指南](https://www.diycode.cc/wiki/androidinterview)
+
+* [常用Android学习资源汇总(一)-优秀网站博客](http://czhzero.com/2016/07/19/android-study-resource/)
+
+* [常用Android学习资源汇总(二)-优秀开源框架](http://www.czhzero.com/2017/02/24/android-study-resource-2/)
+
+* [常用Android学习资源汇总(三)-高频技术专题](http://www.czhzero.com/2017/02/24/android-study-resource-3/)
+
+* [常用Android学习资源汇总(四)-便捷开发工具](http://www.czhzero.com/2017/02/24/android-study-resource-4/)
+
+
