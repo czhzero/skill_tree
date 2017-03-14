@@ -2,21 +2,22 @@
 
 ## 基础语法
 
-[Java基础知识](https://github.com/czhzero/LearningNotes/blob/master/Part2/JavaSE/Java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.md)
+* [Java基础知识](https://github.com/czhzero/LearningNotes/blob/master/Part2/JavaSE/Java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.md)
 
-[String源码分析](https://github.com/GeniusVJR/LearningNotes/blob/master/Part2/JavaSE/String%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90.md)
+* [String源码分析](https://github.com/GeniusVJR/LearningNotes/blob/master/Part2/JavaSE/String%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90.md)
 
-[Java类初始化顺序](http://blog.csdn.net/czhpxl007/article/details/50558319)
+* [Java类初始化顺序](http://blog.csdn.net/czhpxl007/article/details/50558319)
 
-[Java集合框架](https://github.com/GeniusVJR/LearningNotes/blob/master/Part2/JavaSE/Java%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6.md)
+* [Java多态性](https://github.com/czhzero/skill_tree/blob/master/android/article/Java多态.md)
 
-## 面向对象
-
-[Java多态性](https://github.com/czhzero/skill_tree/blob/master/android/article/Java多态.md)
 
 ## 集合/容器
 
-[CSDN - Java集合源码剖析](http://blog.csdn.net/column/details/collection.html)
+* [CSDN - Java集合源码剖析](http://blog.csdn.net/column/details/collection.html)
+
+* [Java集合框架](https://github.com/GeniusVJR/LearningNotes/blob/master/Part2/JavaSE/Java%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6.md)
+
+* [HashMap实现原理分析](http://blog.csdn.net/vking_wang/article/details/14166593)
 
 ## 泛型
 
@@ -31,9 +32,21 @@
 
 ## 并发/死锁
 
-[实例揭示notify()和notifyAll()的本质区别](https://github.com/czhzero/skill_tree/blob/master/android/article/实例揭示notify()和notifyAll()的本质区别.md)
+* [实例揭示notify()和notifyAll()的本质区别](https://github.com/czhzero/skill_tree/blob/master/android/article/实例揭示notify()和notifyAll()的本质区别.md)
 
-[CSDN-Java并发编程系列](http://blog.csdn.net/column/details/concurrency.html?&page=1)
+* [CSDN-Java并发编程系列](http://blog.csdn.net/column/details/concurrency.html?&page=1)
+
+* [Java并发专题:Semaphore 实现 互斥 与 连接池](http://blog.csdn.net/lmj623565791/article/details/26810813)
+
+* [ReentrantLock可重入锁的使用场景](https://my.oschina.net/noahxiao/blog/101558)
+
+
+* [【Java并发编程】并发编程大合集](http://blog.csdn.net/column/details/concurrency.html?&page=1)
+
+## 进程与线程
+
+* [Android HandlerThread 完全解析](http://blog.csdn.net/lmj623565791/article/details/47079737/)
+* [Linux的进程/线程间通信方式总结](http://blog.csdn.net/kobejayandy/article/details/18863543)
 
 ## 类型/反射
 
@@ -65,27 +78,56 @@
 
 ### View & View Group
 
-[Android View的绘制流程](http://www.jianshu.com/p/5a71014e7b1b)
-[Activity是如何接收到touch事件](http://blog.csdn.net/huangjijie123456/article/details/51365097)
+* [Android View的绘制流程](http://www.jianshu.com/p/5a71014e7b1b)
+* [Activity是如何接收到touch事件](http://blog.csdn.net/huangjijie123456/article/details/51365097)
+* [打造属于你的LayoutManager](http://blog.csdn.net/huachao1001/article/details/51594004)
+* [自定义View，有这一篇就够了](http://blog.csdn.net/huachao1001/article/details/51577291)
+* [Android屏幕适配全攻略(最权威的官方适配指导)](http://blog.csdn.net/wyb112233/article/details/47150587)
+* [RelativeLayout和LinearLayout性能比较](http://blog.csdn.net/guyuealian/article/details/52162774)
+* [浮窗开发之窗口层级](http://www.liuguangli.win/archives/476)
 
 ### 事件分发机制
 
 [图解 Android 事件分发机制](http://www.jianshu.com/p/e99b5e8bd67b)
 
 
+## Fragment
+
+* [Android Fragment 真正的完全解析（下）](http://blog.csdn.net/lmj623565791/article/details/37992017)
+
+## 新特性
+
+* [深度了解Android 7.0 ，你准备好了吗](http://mp.weixin.qq.com/s/8Nouh0ZZklqjxfachhoA-g)
+
+* [Java9都快发布了，Java8的十大新特性你了解多少呢？](http://www.cnblogs.com/pkufork/p/java_8.html)
+
+
+
 # 网络
 
-[Java TCP/IP Socket 编程学习笔记系列](http://blog.csdn.net/column/details/socket.html)
+* [Java TCP/IP Socket 编程学习笔记系列](http://blog.csdn.net/column/details/socket.html)
 
-[WebSocket 浅析](http://geek.csdn.net/news/detail/172310)
+* [WebSocket 浅析](http://geek.csdn.net/news/detail/172310)
 
+* [Android推送技术研究](http://www.jianshu.com/p/584707554ed7)
+
+* [Android微信智能心跳方案](http://mp.weixin.qq.com/s?__biz=MzAwNDY1ODY2OQ==&mid=207243549&idx=1&sn=4ebe4beb8123f1b5ab58810ac8bc5994&scene=4#wechat_redirect)
+
+* [HTTP、HTTP2.0、SPDY、HTTPS你应该知道的一些事](http://mt.sohu.com/20160824/n465635124.shtml)
+
+* [HTTPS, SPDY和 HTTP/2性能的简单对比](http://www.tuicool.com/articles/YbQZziY )
+
+* [HTTPS, SPDY和 HTTP/2性能的简单对比 
+](http://www.360doc.com/content/14/0829/23/2735774_405711219.shtml)
 
 # 性能优化
 
+* [Android性能优化总结](http://blog.csdn.net/christopher_411524/article/details/50582740)
+
 # 图片加载框架
 
-[那些我们用过的Android开源图片加载框架](http://www.jianshu.com/p/3ac30878c72c)
-[Android 三大图片缓存原理、特性对比](http://www.trinea.cn/android/android-image-cache-compare/)
+* [那些我们用过的Android开源图片加载框架](http://www.jianshu.com/p/3ac30878c72c)
+* [Android 三大图片缓存原理、特性对比](http://www.trinea.cn/android/android-image-cache-compare/)
 
 
 # 设计模式
@@ -94,6 +136,17 @@
 
 [设计模式-享元模式](https://github.com/czhzero/skill_tree/blob/master/android/article/designpattern/设计模式-享元模式.md)
 
+# 升级迭代
+
+* [Android 数据库升级完整解决方案](http://www.tuicool.com/articles/2iyU3aQ)
+
+# 插件化
+
+* [Android博客周刊专题之＃插件化开发＃](http://www.androidblog.cn/index.php/Index/detail/id/16)
+
+* [DroidPlugin代码分析(四) 进程管理](http://blog.csdn.net/turkeycock/article/details/51298338)
+
+
 # 签名打包
 
 ## keystore
@@ -101,7 +154,6 @@
 ## gradle
 
 [groovy基本语法](http://www.sunnyang.com/521.html)
-
 
 
 ## maven&jcenter
@@ -119,6 +171,8 @@
 [Android架构合集](https://github.com/Juude/Awesome-Android-Architecture)
 
 # 第三方组件和平台
+
+* [Android EventBus源码解析 带你深入理解EventBus](http://blog.csdn.net/lmj623565791/article/details/40920453)
 
 # Linux基础
 
