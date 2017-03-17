@@ -23,6 +23,8 @@
 
 [Java泛型](https://github.com/czhzero/skill_tree/blob/master/android/article/Java泛型1.md)
 
+[Java泛型的实现原理](http://irfen.iteye.com/blog/1888312)
+
 
 ## 异常
 
@@ -46,6 +48,9 @@
 ## 进程与线程
 
 * [Android HandlerThread 完全解析](http://blog.csdn.net/lmj623565791/article/details/47079737/)
+
+* [Android 异步消息处理机制 让你深入理解 Looper、Handler、Message三者关系](http://blog.csdn.net/lmj623565791/article/details/38377229)
+
 * [Linux的进程/线程间通信方式总结](http://blog.csdn.net/kobejayandy/article/details/18863543)
 
 ## 类型/反射
