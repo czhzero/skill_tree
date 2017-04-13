@@ -90,6 +90,8 @@
 * [Android屏幕适配全攻略(最权威的官方适配指导)](http://blog.csdn.net/wyb112233/article/details/47150587)
 * [RelativeLayout和LinearLayout性能比较](http://blog.csdn.net/guyuealian/article/details/52162774)
 * [浮窗开发之窗口层级](http://www.liuguangli.win/archives/476)
+* [Android悬浮窗实现 使用WindowManager](http://www.cnblogs.com/mengdd/p/3824782.html)
+* [自制日期选择器(datepicker)](http://blog.csdn.net/a1031359915/article/details/17529223)
 
 ### 事件分发机制
 
@@ -99,6 +101,14 @@
 ## Fragment
 
 * [Android Fragment 真正的完全解析（下）](http://blog.csdn.net/lmj623565791/article/details/37992017)
+
+* [Managing Static and Dynamic Fragments](http://coreylatislaw.com/managing-static-and-dynamic-fragments/)
+
+* [Android实战技巧：Fragment的那些坑](http://toughcoder.net/blog/2015/04/30/android-fragment-the-bad-parts/)
+
+## Service
+
+* [Android中IntentService与Service的区别](http://blog.csdn.net/matrix_xu/article/details/7974393)
 
 ## 新特性
 
@@ -138,7 +148,11 @@
 
 * [Android性能优化(一)－UI优化](http://www.czhzero.com/2017/02/07/performance-optimization-1/)
 
-# 图片加载框架
+* [Android性能优化之内存篇 - 图文介绍](http://hukai.me/android-performance-memory/)
+
+* [Android应用开发性能优化完全分析 - 工匠若水](http://blog.csdn.net/yanbober/article/details/48394201)
+
+# 图片加载
 
 * [那些我们用过的Android开源图片加载框架](http://www.jianshu.com/p/3ac30878c72c)
 
@@ -163,34 +177,31 @@
 
 * [Android 数据库升级完整解决方案](http://www.tuicool.com/articles/2iyU3aQ)
 
-# 插件化
+# 插件化与热更新
 
 * [Android博客周刊专题之＃插件化开发＃](http://www.androidblog.cn/index.php/Index/detail/id/16)
 
 * [DroidPlugin代码分析(四) 进程管理](http://blog.csdn.net/turkeycock/article/details/51298338)
 
-# 签名打包
+# 编译签名打包
 
-## keystore
+* [groovy基本语法](http://www.sunnyang.com/521.html)
 
-## gradle
+* [Freeline - Android平台上的秒级编译方案](https://yq.aliyun.com/articles/59122)
 
-[groovy基本语法](http://www.sunnyang.com/521.html)
-
-
-## maven&jcenter
-
-## 混淆
-
-## multidex
-
-## 打包过程
+* [那些值得你试试的Android竞品分析工具](http://www.jianshu.com/p/ba2d9eca47a2?hmsr=toutiao.io&utm_medium=toutiao.io&utm_source=toutiao.io)
 
 ## Apk结构
 
 # 架构
 
-[Android架构合集](https://github.com/Juude/Awesome-Android-Architecture)
+* [Android架构合集](https://github.com/Juude/Awesome-Android-Architecture)
+
+* [滴滴国际化项目 Android 端演进](http://www.trinea.cn/android/didi-internationalization-android-evolution/)
+
+* [MVVM_Android-CleanArchitecture](https://rocko.xyz/2015/11/07/MVVM_Android-CleanArchitecture/)
+
+* [给 Android 开发者的 RxJava 详解](http://gank.io/post/560e15be2dca930e00da1083)
 
 # 第三方组件和平台
 
@@ -205,6 +216,8 @@
 [Java代码规范](http://czhzero.coding.me/2016/06/29/java-rules/)
 
 [Java代码规范之CheckStyle + Git Hook](http://czhzero.coding.me/2016/06/29/checkstyle-githook/)
+
+[代码规范和Android项目中的一些可用工具](http://tech.glowing.com/cn/dai-ma-gui-fan-he-androidxiang-mu-zhong-de-xie-ke-yong-gong-ju/)
 
 
 # 代码协作
