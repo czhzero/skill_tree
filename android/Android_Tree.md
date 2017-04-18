@@ -108,7 +108,8 @@
 
 ## Service
 
-* [Android中IntentService与Service的区别](http://blog.csdn.net/matrix_xu/article/details/7974393)
+* [Android IntentService完全解析 当Service遇到Handler](http://blog.csdn.net/lmj623565791/article/details/47143563)
+* [Android HandlerThread 完全解析](http://blog.csdn.net/lmj623565791/article/details/47079737)
 
 ## 新特性
 
