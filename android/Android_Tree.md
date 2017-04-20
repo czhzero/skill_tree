@@ -92,6 +92,7 @@
 * [浮窗开发之窗口层级](http://www.liuguangli.win/archives/476)
 * [Android悬浮窗实现 使用WindowManager](http://www.cnblogs.com/mengdd/p/3824782.html)
 * [自制日期选择器(datepicker)](http://blog.csdn.net/a1031359915/article/details/17529223)
+* [MeasureSpec介绍及使用](http://www.cnblogs.com/nanxiaojue/p/3536381.html)
 
 ### 事件分发机制
 
