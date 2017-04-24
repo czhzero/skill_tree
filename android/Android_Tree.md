@@ -136,6 +136,12 @@
 * [HTTPS, SPDY和 HTTP/2性能的简单对比 
 ](http://www.360doc.com/content/14/0829/23/2735774_405711219.shtml)
 
+* [HTTP、SSL/TLS和HTTPS协议的区别与联系](http://www.mahaixiang.cn/internet/1522.html)
+
+* [Android OkHttp完全解析 是时候来了解OkHttp了](http://blog.csdn.net/lmj623565791/article/details/47911083)
+
+* [ 从原理角度解析Android （Java） http 文件上传](http://blog.csdn.net/lmj623565791/article/details/23781773)
+
 # 性能优化
 
 * [Android性能优化总结](http://blog.csdn.net/christopher_411524/article/details/50582740)
