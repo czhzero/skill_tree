@@ -93,6 +93,7 @@
 * [Android悬浮窗实现 使用WindowManager](http://www.cnblogs.com/mengdd/p/3824782.html)
 * [自制日期选择器(datepicker)](http://blog.csdn.net/a1031359915/article/details/17529223)
 * [MeasureSpec介绍及使用](http://www.cnblogs.com/nanxiaojue/p/3536381.html)
+* [Android ListView工作原理完全解析](http://blog.csdn.net/jacklam200/article/details/48524637)
 
 ### 事件分发机制
 
@@ -131,10 +132,6 @@
 
 * [HTTP、HTTP2.0、SPDY、HTTPS你应该知道的一些事](http://mt.sohu.com/20160824/n465635124.shtml)
 
-* [HTTPS, SPDY和 HTTP/2性能的简单对比](http://www.tuicool.com/articles/YbQZziY )
-
-* [HTTPS, SPDY和 HTTP/2性能的简单对比 
-](http://www.360doc.com/content/14/0829/23/2735774_405711219.shtml)
 
 * [HTTP、SSL/TLS和HTTPS协议的区别与联系](http://www.mahaixiang.cn/internet/1522.html)
 
