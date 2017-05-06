@@ -139,6 +139,8 @@
 
 * [ 从原理角度解析Android （Java） http 文件上传](http://blog.csdn.net/lmj623565791/article/details/23781773)
 
+* [HTTPS 原理解析](http://www.cnblogs.com/zery/p/5164795.html)
+
 # 性能优化
 
 * [Android性能优化总结](http://blog.csdn.net/christopher_411524/article/details/50582740)
