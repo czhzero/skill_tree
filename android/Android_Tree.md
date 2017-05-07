@@ -159,6 +159,8 @@
 
 * [Android应用开发性能优化完全分析 - 工匠若水](http://blog.csdn.net/yanbober/article/details/48394201)
 
+* [深入浅出Android App耗电量统计](http://www.cnblogs.com/hyddd/p/4402621.html)
+
 # 图片加载
 
 * [那些我们用过的Android开源图片加载框架](http://www.jianshu.com/p/3ac30878c72c)
