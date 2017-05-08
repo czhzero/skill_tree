@@ -141,6 +141,8 @@
 
 * [HTTPS 原理解析](http://www.cnblogs.com/zery/p/5164795.html)
 
+* [android WebView详解，常见漏洞详解和安全源码（上）](http://blog.csdn.net/self_study/article/details/54928371)
+
 # 性能优化
 
 * [Android性能优化总结](http://blog.csdn.net/christopher_411524/article/details/50582740)
