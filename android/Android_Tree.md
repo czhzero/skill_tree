@@ -63,7 +63,13 @@
 
 ## 缓存\内存管理
 
-[Android内存泄漏常见场景分析](http://www.czhzero.com/2016/07/04/memory-leak-possibility/)
+* [Android内存泄漏常见场景分析](http://www.czhzero.com/2016/07/04/memory-leak-possibility/)
+
+## WebView
+
+* [H5 缓存机制浅析 移动端 Web 加载性能优化](http://www.cocoachina.com/webapp/20151217/14718.html)
+* [Android：最全面的 Webview 详解](http://blog.csdn.net/carson_ho/article/details/52693322)
+
 
 ## 虚拟机
 
@@ -77,7 +83,7 @@
 
 ## 权限机制
 
-[Android权限机制](http://mp.weixin.qq.com/s?__biz=MzIxNzEyMzIzOA==&mid=2652313851&idx=1&sn=a15519b65e7bedefbb566fe6d01935cb&scene=4#wechat_redirect)
+* [Android权限机制](http://mp.weixin.qq.com/s?__biz=MzIxNzEyMzIzOA==&mid=2652313851&idx=1&sn=a15519b65e7bedefbb566fe6d01935cb&scene=4#wechat_redirect)
 
 ## View
 
@@ -256,3 +262,8 @@
 * [常用Android学习资源汇总(四)-便捷开发工具](http://www.czhzero.com/2017/02/24/android-study-resource-4/)
 
 
+
+
+# 杂类
+
+* [电脑显卡4种接口类型：VGA、DVI、HDMI、DP ](http://blog.sina.com.cn/s/blog_68274d0f01017ik2.html)
