@@ -100,10 +100,11 @@
 * [自制日期选择器(datepicker)](http://blog.csdn.net/a1031359915/article/details/17529223)
 * [MeasureSpec介绍及使用](http://www.cnblogs.com/nanxiaojue/p/3536381.html)
 * [Android ListView工作原理完全解析](http://blog.csdn.net/jacklam200/article/details/48524637)
+* [四种方案解决ScrollView嵌套ListView问题](http://blog.csdn.net/u010375364/article/details/51911316)
 
 ### 事件分发机制
 
-[图解 Android 事件分发机制](http://www.jianshu.com/p/e99b5e8bd67b)
+* [图解 Android 事件分发机制](http://www.jianshu.com/p/e99b5e8bd67b)
 
 
 ## Fragment
