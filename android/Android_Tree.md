@@ -170,6 +170,8 @@
 
 * [深入浅出Android App耗电量统计](http://www.cnblogs.com/hyddd/p/4402621.html)
 
+* [Protobuf 有没有比 JSON 快 5 倍？](http://www.infoq.com/cn/articles/json-is-5-times-faster-than-protobuf)
+
 # 图片加载
 
 * [那些我们用过的Android开源图片加载框架](http://www.jianshu.com/p/3ac30878c72c)
