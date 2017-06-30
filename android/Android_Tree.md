@@ -150,6 +150,10 @@
 
 * [android WebView详解，常见漏洞详解和安全源码（上）](http://blog.csdn.net/self_study/article/details/54928371)
 
+* [Http协议：彻底弄懂 Http 缓存机制 - 基于缓存策略三要素分解法](http://www.cnblogs.com/shangxiaofei/p/6214560.html)
+
+* [HTTP协议header标头详解](http://blog.csdn.net/rainysia/article/details/8131174)
+
 # 性能优化
 
 * [Android性能优化总结](http://blog.csdn.net/christopher_411524/article/details/50582740)
