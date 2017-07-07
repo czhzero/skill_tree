@@ -217,6 +217,8 @@
 
 ## Apk结构
 
+* [android Apk打包过程概述](http://blog.csdn.net/jason0539/article/details/44917745)
+
 # 架构
 
 * [Android架构合集](https://github.com/Juude/Awesome-Android-Architecture)
