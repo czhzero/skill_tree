@@ -154,6 +154,8 @@
 
 * [HTTP协议header标头详解](http://blog.csdn.net/rainysia/article/details/8131174)
 
+* [Android混合开发之WebView与Javascript交互](http://www.cnblogs.com/whoislcj/p/5980240.html)
+
 # 性能优化
 
 * [Android性能优化总结](http://blog.csdn.net/christopher_411524/article/details/50582740)
