@@ -21,9 +21,9 @@
 
 ## 泛型
 
-[Java泛型](https://github.com/czhzero/skill_tree/blob/master/android/article/Java泛型1.md)
+* [Java泛型](https://github.com/czhzero/skill_tree/blob/master/android/article/Java泛型1.md)
 
-[Java泛型的实现原理](http://irfen.iteye.com/blog/1888312)
+* [Java泛型的实现原理](http://irfen.iteye.com/blog/1888312)
 
 
 ## 异常
