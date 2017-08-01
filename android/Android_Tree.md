@@ -19,6 +19,8 @@
 
 * [HashMap实现原理分析](http://blog.csdn.net/vking_wang/article/details/14166593)
 
+* [遍历HashMap的四种方法](http://blog.csdn.net/onlyonecoder/article/details/8514443)
+
 ## 泛型
 
 * [Java泛型](https://github.com/czhzero/skill_tree/blob/master/android/article/Java泛型1.md)
@@ -55,11 +57,15 @@
 
 ## 类型/反射
 
+* [AOP的实现机制](http://www.iteye.com/topic/1116696)
+* [归纳AOP在Android开发中的几种常见用法](http://www.jianshu.com/p/2779e3bb1f14)
+* [看AspectJ在Android中的强势插入 ](http://blog.csdn.net/eclipsexys/article/details/54425414)
+* [AspectJ切入点语法详解](http://jinnianshilongnian.iteye.com/blog/1415606)
 # Android
 
 ## 资源适配
 
-[res资源目录详解](https://github.com/czhzero/skill_tree/blob/master/android/article/res资源目录详解.md)
+* [res资源目录详解](https://github.com/czhzero/skill_tree/blob/master/android/article/res资源目录详解.md)
 
 ## 缓存\内存管理
 
