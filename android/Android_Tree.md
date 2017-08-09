@@ -56,7 +56,6 @@
 * [Linux的进程/线程间通信方式总结](http://blog.csdn.net/kobejayandy/article/details/18863543)
 
 ## 类型/反射
-
 * [AOP的实现机制](http://www.iteye.com/topic/1116696)
 * [归纳AOP在Android开发中的几种常见用法](http://www.jianshu.com/p/2779e3bb1f14)
 * [看AspectJ在Android中的强势插入 ](http://blog.csdn.net/eclipsexys/article/details/54425414)
@@ -75,6 +74,10 @@
 
 * [H5 缓存机制浅析 移动端 Web 加载性能优化](http://www.cocoachina.com/webapp/20151217/14718.html)
 * [Android：最全面的 Webview 详解](http://blog.csdn.net/carson_ho/article/details/52693322)
+* [react-native在Anroid真机运行时可能会遇到白屏的情况解决办法 ](http://blog.csdn.net/itpinpai/article/details/50845625)
+* [ react native 错误unable to load script form assets解决 ](http://blog.csdn.net/u013179982/article/details/73741958)
+
+* [Android如何写一个JsBridge](http://www.cnblogs.com/xesam/p/5402985.html)
 
 
 ## 虚拟机
@@ -242,6 +245,11 @@
 * [Android EventBus源码解析 带你深入理解EventBus](http://blog.csdn.net/lmj623565791/article/details/40920453)
 
 # Linux基础
+
+* [Linux 安装 oh my zsh 终端及简单使用方法](http://blog.csdn.net/yuqiongran/article/details/52280522 )
+* [ubuntu下 vi输入方向键会变成ABCD的解决方法 ](http://blog.csdn.net/w7822938/article/details/19240585)
+* [Autojump：一个可以在 Linux 文件系统快速导航的高级 cd 命令 ](https://linux.cn/article-5983-1.html)
+* [libstdc++.so.6: version CXXABI_1.3.8 notfound解决方案](http://blog.csdn.net/u010648159/article/details/52387041)
 
 # JNI基础
 
