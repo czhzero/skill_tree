@@ -55,6 +55,8 @@
 
 * [Linux的进程/线程间通信方式总结](http://blog.csdn.net/kobejayandy/article/details/18863543)
 
+* [android杀进程方法 ](http://blog.csdn.net/calvin367/article/details/42919561)
+
 ## 类型/反射
 * [AOP的实现机制](http://www.iteye.com/topic/1116696)
 * [归纳AOP在Android开发中的几种常见用法](http://www.jianshu.com/p/2779e3bb1f14)
@@ -208,9 +210,11 @@
 
 * [设计模式-原型模式](http://www.czhzero.com/2017/03/12/design-pattern-prototype/)
 
-# 升级迭代
+# 数据库
 
 * [Android 数据库升级完整解决方案](http://www.tuicool.com/articles/2iyU3aQ)
+* [Android开源数据库LitePal](http://www.jianshu.com/p/557682e0a9f0
+* [手机管理应用研究【3】—— 垃圾清理篇 ](http://blog.csdn.net/zhgxhuaa/article/details/33743293)
 
 # 插件化与热更新
 
@@ -271,7 +275,9 @@
 
 # 开发工具
 
-[markdown基础语法](https://github.com/czhzero/skill_tree/blob/master/android/article/markdown基础语法.md)
+* [markdown基础语法](https://github.com/czhzero/skill_tree/blob/master/android/article/markdown基础语法.md)
+
+* [Gerrit使用简介](http://www.cnblogs.com/lexuele/p/5133601.html)
 
 
 # 面试指南
