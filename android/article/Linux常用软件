@@ -1,0 +1,34 @@
+1,安装Kubuntu14.0.4.4，
+2，修改语系，添加中文支持（不是很完善）
+2,启用root passwd root
+3,安装kdm ，修改/etc/kde4/kdm/kdmrc AllowRootLogin=true,允许root用户登录
+4,apt-get install ibus-googlepinyin ,使用google拼音输入法
+5,apt-get -y install openconnect network-manager-openconnect，可以是用AnyConnec连接VPN
+6,安装Chromium, 修改/user/share/Application 中Chromium的命令行，加上--user-data-dir，允许root启动
+7,编辑/root/.local/share/akonadi/mysql.conf  在[mysqld]一栏中加入user=root 允许kmail root登录
+8,apt-get install libc6-i386 ，安装WPS dpkg -i /root/Downloads/wps-office_10.1.0.5503-a20p2_amd64.deb
+9,修改fstab 将sda6自动挂载到/opt/samsung ，ls -l /dev/disk/by-uuid查看UUID
+10,安装WINE
+11,安装source insight
+12,cp /etc/udev/rules.d/51-android.rules
+
+===安装android 开发环境
+1.apt-get install make gcc 
+编译Uboot Kernel OK 
+2.apt-get install ncurses-dev  支持kernel make menuconfig
+3.apt-get install lib32z1 lib32ncurses5 lib32bz2-1.0
+4.apt-get install libc6-dev-i386 zlib1g-dev g++-multilib lib32z1-dev lib32ncurses5-dev libxml2-utils uuid-dev liblzo2-dev
+5.apt-get install vim curl git gitg bison flex gperf u-boot-tools minicom openssh-server dos2unix gawk
+
+sudo apt-get install git-core gnupg flex bison gperf build-essential \
+  zip curl zlib1g-dev gcc-multilib g++-multilib libc6-dev-i386 \
+  lib32ncurses5-dev x11proto-core-dev libx11-dev lib32z-dev ccache \
+  libgl1-mesa-dev libxml2-utils xsltproc unzip
+
+6.安装jdk6
+cp mkimage to user local bin
+
+===待处理
+cp adb fastboot  to user local bin
+ssh git 服务器
+user local bin 打包备份
