@@ -279,6 +279,8 @@
 
 * [Gerrit使用简介](http://www.cnblogs.com/lexuele/p/5133601.html)
 
+* [Mac下统计任意文件夹中代码行数的工具——cloc](http://www.cnblogs.com/wengzilin/p/4580646.html)
+
 
 # 面试指南
 
